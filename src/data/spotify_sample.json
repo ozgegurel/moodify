@@ -1,0 +1,28 @@
+{
+  "items": [
+    {
+      "id": "7sUBdoD7SqtZGWm4nfB2WD",
+      "name": "Yardım Et",
+      "href": "https://api.spotify.com/v1/tracks/7sUBdoD7SqtZGWm4nfB2WD",
+      "album": {
+        "images": [
+          {
+            "height": 640,
+            "width": 640,
+            "url": "https://i.scdn.co/image/ab67616d0000b27361cd6f5ad7c69b76adbc5419"
+          },
+          {
+            "height": 300,
+            "width": 300,
+            "url": "https://i.scdn.co/image/ab67616d00001e0261cd6f5ad7c69b76adbc5419"
+          },
+          {
+            "height": 64,
+            "width": 64,
+            "url": "https://i.scdn.co/image/ab67616d0000485161cd6f5ad7c69b76adbc5419"
+          }
+        ]
+      }
+    }
+  ]
+}
