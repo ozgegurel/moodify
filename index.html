@@ -2,9 +2,28 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link id="favicon" rel="icon" type="image/png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Moodify</title>
+    <meta name="color-scheme" content="light dark" />
+    <title>Moodify - Discover Music for Your Mood</title>
+    <script>
+      // Apply dark mode class and favicon before React loads to prevent flash
+      (function() {
+        const saved = localStorage.getItem('darkMode');
+        const isDark = saved !== null 
+          ? saved === 'true' 
+          : window.matchMedia('(prefers-color-scheme: dark)').matches;
+        if (isDark) {
+          document.documentElement.classList.add('dark');
+          document.documentElement.classList.remove('light');
+          document.getElementById('favicon').href = '/src/assets/moodify-dark-icon.png';
+        } else {
+          document.documentElement.classList.add('light');
+          document.documentElement.classList.remove('dark');
+          document.getElementById('favicon').href = '/src/assets/moodify-light-icon.png';
+        }
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>

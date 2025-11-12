@@ -1,1 +1,30 @@
 @import "tailwindcss";
+
+/* Configure dark mode to use class strategy instead of media query */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Base styles for better dark mode support */
+html {
+  color-scheme: light dark;
+}
+
+html.dark {
+  color-scheme: dark;
+}
+
+html.light {
+  color-scheme: light;
+}
+
+body {
+  @apply antialiased;
+}
+
+/* Smooth transitions for interactive elements */
+button,
+a,
+input {
+  transition-property: color, background-color, border-color, opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
