@@ -58,13 +58,7 @@ const RecommendationsField = ({ recommendations, loading, error }) => {
   }
 
   if (recommendations.length <= 0) {
-    return (
-      <div className="text-center">
-        <p className="text-gray-600 dark:text-neutral-400">
-          No recommendations yet. Try describing your mood above!
-        </p>
-      </div>
-    );
+    return null;
   }
 
   return (
