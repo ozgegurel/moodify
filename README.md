@@ -1,8 +1,12 @@
-# 🧠🎶💫 Moodify
+<img src="src/assets/moodify-dark.png" alt="Moodify Logo" style="max-width: 400px; width: 100%; height: auto;" />
 
 _Your mood becomes music through the magic of AI._
 
+[🌐 Live Demo](https://moodify.osuke.dev/)
+
 Moodify is an intelligent music recommendation application that suggests songs based on your mood descriptions. Using the power of Google's Gemini AI and Spotify's extensive music database, Moodify provides personalized song recommendations that match your emotional state.
+
+![Moodify Screenshot](src/assets/moodify-screen.png)
 
 ## ✨ Features
 
